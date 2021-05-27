@@ -1,0 +1,28 @@
+version: '3.3'
+networks:
+ web:
+
+services:
+  db:
+    image: postgres:alpine
+    container_name: xmen_db
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=changeme
+      - POSTGRES_DB=proyectox
+    networks:
+       - web
+  api:
+    build: .
+    container_name: xmen_api
+    restart: on-failure
+    environment:
+      - PORT=3000
+      - DB_NAME=proyectox
+      - DB_PASSWORD=changeme
+      - DB_HOST=xmen_db
+      - DB_USER=postgres
+    ports:
+      - 3000:3000
+    networks:
+       - web
