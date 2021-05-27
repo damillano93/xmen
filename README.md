@@ -89,7 +89,7 @@ para ver resultados del ultimo test [ver](https://github.com/damillano93/xmen/ac
 ### Ouroboros (Contenedor) [mas info](https://github.com/pyouroboros/ouroboros)
 -  contenedor que escucha cuando se crea una nueva version de la imagen del contenedor en dockerhub y la actualiza en el servidor
 
-![alt text](images/xmen_arquitectura.png)
+![alt text](images/arquitectura.png)
 
 ## Diagrama de secuencia
 
