@@ -31,15 +31,19 @@ curl --location --request POST 'localhost:3000/mutant' \
     ]
 }'
 `
-### Ejemplo de request local para obtener las estadisticas
+### Ejemplo de request local para obtener las estadisticas local
 
 `curl --location --request GET 'localhost:3000/stats'`
 
+### Ejemplo de request local para obtener las estadisticas en servidor
+
+`curl --location --request GET 'https://proyectox.damillano.com/stats'`
+
 ## Version online 
 ### Rutas
-- GET [estado del servicio](https://xmen.damillano.com/health)
-- POST [validar un mutante](https://xmen.damillano.com/mutant)
-- GET [estadisticas de validacion](https://xmen.damillano.com/stats)
+- GET [estado del servicio](https://proyectox.damillano.com/health)
+- POST [validar un mutante](https://proyectox.damillano.com/mutant)
+- GET [estadisticas de validacion](https://proyectox.damillano.com/stats)
 
 
 
